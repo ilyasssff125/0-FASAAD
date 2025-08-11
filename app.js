@@ -57,7 +57,7 @@ function getReports(){
       loginBtn.addEventListener('click', function(){
         const pass = document.getElementById('adminPass').value;
         // تحذير: هذه طريقة حماية مؤقتة فقط للعرض!
-        const ADMIN_PASS = 'admin123'; // غيّرها عندك
+        const ADMIN_PASS = 'Ilyaass12345'; // غيّرها عندك
         if(pass === ADMIN_PASS){
           document.getElementById('adminPass').value = '';
           loginMsg.textContent = '';
@@ -105,4 +105,5 @@ function getReports(){
       return str.replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;');
     }
   });
+
   
