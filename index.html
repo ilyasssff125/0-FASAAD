@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ar">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>0 فساد — محاربة الفساد الإلكتروني</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="logo">0 FASAAD</h1>
+      <nav>
+        <a href="index.html">الرئيسية</a>
+        <a href="about.html">عن المشروع</a>
+        <a href="report.html" class="btn-primary">أبلغ الآن</a>
+        <a href="resources.html">الموارد</a>
+        <a href="contact.html">اتصل بنا</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h2>نحو فضاء إلكتروني نقيّ وآمن</h2>
+      <p>منصة «0 فساد» تسهّل الإبلاغ عن الممارسات المشبوهة والفساد الإلكتروني، وتقدّم موارد للتوعية وكيفية الحماية.</p>
+      <div class="hero-actions">
+        <a href="report.html" class="btn-primary large">أبلغ الآن</a>
+        <a href="resources.html" class="btn-outline">تعرف أكثر</a>
+      </div>
+    </section>
+
+    <section class="features">
+      <article>
+        <h3>الإبلاغ السريع</h3>
+        <p>نموذج مبسّط لإرسال بلاغات مع حفظ محلي أو إرسال لسيرفر عند الربط.</p>
+      </article>
+      <article>
+        <h3>تعليم ووقاية</h3>
+        <p>موارد ونصائح لحماية نفسك ومؤسستك من الهجمات والاحتيال الإلكتروني.</p>
+      </article>
+      <article>
+        <h3>شفافية ومتابعة</h3>
+        <p>لوحة إدارة لعرض البلاغات ومعالجتها (تجريبي، يحتاج backend للحماية الكاملة).</p>
+      </article>
+    </section>
+
+    <section class="how-it-works">
+      <h2>كيف نخدم</h2>
+      <ol>
+        <li>تعبئة بلاغ واضح مع الأدلة (صور/روابط).</li>
+        <li>حفظ البلاغ في النظام (محلي أو سحابي).</li>
+        <li>متابعة ومعالجة من طرف الفريق أو الجهات المعنية.</li>
+      </ol>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> 0 فساد — كل الحقوق محفوظة</p>
+      <p class="small">إخلاء مسؤولية: المنصة مجرد أداة إبلاغ. أي تحقيق رسمي يجب أن يتم عبر الجهات المختصة.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

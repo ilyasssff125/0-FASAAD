@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ar">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>اتصل بنا — 0 فساد</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="logo">0 فساد</h1>
+      <nav>
+        <a href="index.html">الرئيسية</a>
+        <a href="about.html">عن المشروع</a>
+        <a href="report.html" class="btn-primary">أبلغ الآن</a>
+        <a href="resources.html">الموارد</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>اتصل بنا</h2>
+    <p>للتعاون أو الدعم التقني، راسلنا عبر النموذج التالي (هذا نموذج ظاهري — تحتاج ربطه بخادم لإرسال الرسائل فعليًا):</p>
+
+    <form id="contactForm">
+      <label>الاسم
+        <input type="text" id="cname" />
+      </label>
+      <label>البريد الإلكتروني
+        <input type="email" id="cemail" />
+      </label>
+      <label>الرسالة
+        <textarea id="cmessage" rows="5"></textarea>
+      </label>
+      <div class="form-actions">
+        <button type="button" class="btn-primary" onclick="alert('هذا نموذج تجريبي، لم يتم إرساله فعليًا.')">إرسال</button>
+      </div>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year5"></span> 0 فساد</p>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year5').textContent = new Date().getFullYear();</script>
+</body>
+</html>

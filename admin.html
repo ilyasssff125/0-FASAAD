@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ar">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>لوحة الإدارة — 0 فساد</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="logo">0 فساد</h1>
+      <nav>
+        <a href="index.html">الرئيسية</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>لوحة الإدارة (تجريبي)</h2>
+
+    <div class="admin-login">
+      <label>كلمة مرور الإدارة:
+        <input type="password" id="adminPass" placeholder="أدخل كلمة المرور" />
+      </label>
+      <button id="loginBtn" class="btn-primary">دخول</button>
+      <p id="loginMsg" class="small"></p>
+    </div>
+
+    <div id="adminArea" style="display:none;">
+      <h3>البلاغات المحفوظة</h3>
+      <table id="reportsTable">
+        <thead><tr><th>الوقت</th><th>العنوان</th><th>تفاصيل</th><th>اسم المبلغ</th><th>البريد</th></tr></thead>
+        <tbody></tbody>
+      </table>
+
+      <button id="clearReports" class="btn-outline">حذف كل البلاغات (محليًا)</button>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year6"></span> 0 فساد</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+  <script>document.getElementById('year6').textContent = new Date().getFullYear();</script>
+</body>
+</html>

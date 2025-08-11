@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ar">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>أبلغ عن فساد — 0 فساد</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="logo">0 فساد</h1>
+      <nav>
+        <a href="index.html">الرئيسية</a>
+        <a href="about.html">عن المشروع</a>
+        <a href="report.html" class="btn-primary">أبلغ الآن</a>
+        <a href="resources.html">الموارد</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="form-section">
+      <h2>نموذج الإبلاغ عن فساد إلكتروني</h2>
+      <p class="small">أدخل معلومات دقيقة قدر الإمكان. يمكنك ترك الحقول الشخصية فارغة إذا أردت الإبلاغ مجهولًا.</p>
+
+      <form id="reportForm">
+        <label>عنوان البلاغ
+          <input type="text" id="title" name="title" required maxlength="120" placeholder="مثال: طلب رشاوى عبر منصة X" />
+        </label>
+
+        <label>تفاصيل البلاغ
+          <textarea id="description" name="description" rows="6" required placeholder="وصف الحادثة، التواريخ، أسماء الجهات (إن وُجدت)"></textarea>
+        </label>
+
+        <label>تاريخ الحادث (اختياري)
+          <input type="date" id="incidentDate" name="incidentDate" />
+        </label>
+
+        <label>روابط أو أدلة (روابط، معرفات محادثات)
+          <input type="text" id="evidence" name="evidence" placeholder="https://example.com أو ملاحظات" />
+        </label>
+
+        <label>اسم المبلغ (اختياري)
+          <input type="text" id="reporterName" name="reporterName" placeholder="يمكن تركه فارغًا للخصوصية" />
+        </label>
+
+        <label>بريد إلكتروني للتواصل (اختياري)
+          <input type="email" id="reporterEmail" name="reporterEmail" placeholder="example@mail.com" />
+        </label>
+
+        <div class="form-actions">
+          <button type="submit" class="btn-primary">إرسال البلاغ</button>
+          <button type="reset" class="btn-outline">إعادة تعيين</button>
+        </div>
+
+        <p id="formMessage" class="small"></p>
+      </form>
+    </section>
+
+    <section class="tips">
+      <h3>نصائح لإعداد بلاغ فعال</h3>
+      <ul>
+        <li>احرص على ذكر تواريخ وأسماء ووصف واضح.</li>
+        <li>أرفق أدلة إن أمكن (روابط أو صور عند الربط بالسيرفر).</li>
+        <li>إذا كانت معلومات حساسة، جِد طريقة آمنة لمشاركتها مع الجهات المختصة.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year3"></span> 0 فساد</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+  <script>document.getElementById('year3').textContent = new Date().getFullYear();</script>
+</body>
+</html>
